@@ -14,7 +14,7 @@
 
 ## RECCOMEND EXECUTING THE KODE AFTER THE "MIDWAY PRESENTS..." SCREEN, IT SEEMS TO BE MORE EFFECTIVE THAT WAY.
 ## MK3/UMK3 KODE DOES NOT SEEM TO WORK DURING THE MONTAGE OF GAMEPLAY SCREEN RIGHT BEFORE 'THERE IS NO KNOWLEDGE THAT IS NOT POWER'
-## BEST TO DO IT ON THE AMAA SCREEN, TITLE SCREEN OR STANDARD GAMEPLAY SCREENS IN DEMO MODE.
+## FOR MK3, BEST TO DO IT ON THE AMAA SCREEN, TITLE SCREEN OR STANDARD GAMEPLAY SCREENS IN DEMO MODE.
 
 ##---------------EJB KODES---------------##
 ##  BUTTON:[BL : P1|P2|P1|P2|P1|P2|P1|P2]##
@@ -59,7 +59,7 @@
 
 ## Import Classes DO NOT CHANGE!
 
-from machine import Pin, Timer, SPI
+from machine import Pin, Timer
 from time import sleep_ms, sleep
 
 ####################################################################
@@ -98,16 +98,11 @@ redled.value(0)
 ####################################################################
 ##DO NOT CHANGE ANYTHING BELOW UNLESS YOU KNOW WHAT YOU ARE DOING!!#
 
-# P1 BL Counter DO NOT CHANGE!
+# P1 / P2 BL Counter DO NOT CHANGE!
 
 DEFAULT_COUNTER_VALUE = 0
 COUNTER_CHANGE = 1
 p1bl_value = DEFAULT_COUNTER_VALUE
-
-# P2 BL Counter DO NOT CHANGE!
-
-DEFAULT_COUNTER_VALUE = 0
-COUNTER_CHANGE = 1
 p2bl_value = DEFAULT_COUNTER_VALUE
 
 while True:
@@ -337,4 +332,4 @@ while True:
 ######################## ## END AUTOMATIC EJB KODE ## ########################
 ######################## ##      ©TotalMK 2021     ## ########################
 ##############################################################################
-#################################Version 1.0##################################
+#################################Version 1.1##################################
